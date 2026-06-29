@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business OS Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+    }
 
+    button {
+      padding: 12px;
+      margin: 8px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .box {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🧠 Live Control Dashboard</h1>
+
+<div class="box">
+  <h2>Ecosystem Controls</h2>
+
+  <button onclick="sendAction('restaurants','scale')">Scale Restaurants</button>
+  <button onclick="sendAction('roofing','pause')">Pause Roofing</button>
+  <button onclick="sendAction('dentists','clone')">Clone Dentists</button>
+</div>
+
+<div class="box">
+  <h2>Status</h2>
+  <div id="status">Ready</div>
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
